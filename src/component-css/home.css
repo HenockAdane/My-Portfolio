@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .App header{
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .nav-links{
+    margin: 0 20px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .nav-links:hover{
+    text-decoration: underline;
+    transform: scale(1.05);
+  }
+  
+  
+  footer{
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  
+  footer img{
+    display: block;
+  }
+  
+  footer div{
+    width: 305.64px;
+  }
+  /* img{
+    width: 100px;
+    height: 100px;
+  } */
+  
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+  }
+  
+  
+  body{
+    min-height: 90vh;
+  }
+  
+  .homeBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .HImg1{
+    width: 1110px;
+    min-height: 600px;
+    background-image: url(../images/homepage/desktop/image-homepage-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .intro{
+    width: 445px;
+    min-height: 357px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid black;
+  }
+  
+  .intro h1{
+    font-size: 50px;
+  }
+  
+  .intro a{
+    display: inline-block;
+    font-size: 30px;
+    background-color: #203A4C;
+    width: 200px;
+    height: 48px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 10px;
+    border: 1px solid black;
+  }
+  
+  .arrowDown{
+    display: inline-block;
+    width: 48px;
+    height: 18px;
+    background-image: url(../images/icons/down-arrows.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
