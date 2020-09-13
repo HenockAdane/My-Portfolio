@@ -90,13 +90,13 @@
   
   .intro a{
     display: inline-block;
-    font-size: 30px;
+    font-size: 20px;
     background-color: #203A4C;
     width: 200px;
     height: 48px;
     text-decoration: none;
     color: #ffffff;
-    padding: 10px 10px;
+    padding: 10px;
     border: 1px solid black;
   }
   
