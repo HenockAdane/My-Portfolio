@@ -19,25 +19,8 @@ class Projects extends React.Component{
                 description: "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.",
                 img: "../images\portfolio\desktop\image-portfolio-manage.jpg",
                 link: "https://manage-landing-page-by-henock-adane.vercel.app/"
-            },
-            {
-                project: "Bookmark",
-                description: "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.",
-                img: "../images\portfolio\desktop\image-portfolio-bookmark.jpg",
-                link: "https://book-mark-by-henock-adane.vercel.app/"
-            },
-            {
-                project: "Insure",
-                description: "This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.",
-                img: "../images\portfolio\desktop\image-portfolio-insure.jpg",
-                link: "https://insure-landing-page-by-henock.vercel.app/"
-            },
-            {
-                project: "Fylo",
-                description: "This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
-                img: "../images\portfolio\desktop\image-portfolio-fylo.jpg",
-                link:"https://flyo-landing-page-by-henock-adane.vercel.app/"
-            }]
+            }
+       ]
         }
     }
 
