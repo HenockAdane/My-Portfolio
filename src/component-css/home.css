@@ -49,7 +49,11 @@
     text-decoration: none;
     color: #ffffff;
     padding: 10px;
+<<<<<<< HEAD
     /* border: 1px solid black; */
+=======
+    border: 1px solid black;
+>>>>>>> 482dc41308f524c09880c07cfe9c7dd766ce862a
   }
   
   .arrowDown{
