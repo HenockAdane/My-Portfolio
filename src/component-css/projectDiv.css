@@ -1,0 +1,34 @@
+/* 1015 * 500
+540 * 500
+475 * 500 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+
+
+.projectContainer{
+    width: 1015px;
+    height: 500px;
+}
+
+.projectImg{
+    width: 540px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projectDescription{
+    width: 475px;
+    height: 500px;
+}
