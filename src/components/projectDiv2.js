@@ -8,13 +8,14 @@ class ProjectDiv2 extends React.Component{
     render(){
         return(
             <div className="projectContainer">
-                <div className="projectDescription">
+                <div className="projectDescription two">
                     <h1>{this.props.h1}</h1>
 
-                    <p>{this.props.descripition}</p>
+                    <p>{this.props.description}</p>
                     <a href={this.props.link} target="_blank">Visit Site</a>
                 </div>
-                <div className="projectImg" style={{backgroundImage: `url(${this.props.img})`}}></div>
+                <img className="projectImg" alt="1" src={this.props.img} />
+
             </div>
         )
     }

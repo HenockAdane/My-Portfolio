@@ -23,7 +23,11 @@ class App extends React.Component {
 
 
   
-  render(){ 
+  render(){
+
+
+    
+ 
     return (
     <div className="App">
     <header>
@@ -53,14 +57,14 @@ class App extends React.Component {
           )} /> */}
         </Switch>
 
-    {/* <footer>
+    <footer>
     <img src={logo} ></img>
     <div className="socialsDiv">
       <a href="https://github.com/HenockAdane" target="_blank"><GithubLogo className="socials"/></a>
       <a href="#" target="_blank"><TwitterLogo className="socials"/></a>
       <a href="#" target="_blank"><LinkedinLogo className="socials"/></a>
     </div>
-    </footer> */}
+    </footer>
 
     </div>
   )};

@@ -8,8 +8,8 @@ class ProjectDiv1 extends React.Component{
     render(){
         return(
             <div className="projectContainer">
-                <div className="projectImg" style={{backgroundImage: `url(${this.props.img})`}}></div>
-                <div className="projectDescription">
+                <img className="projectImg" alt="1" src={this.props.img} />
+                <div className="projectDescription one">
                     <h1>{this.props.h1}</h1>
 
                     <p>{this.props.description}</p>
