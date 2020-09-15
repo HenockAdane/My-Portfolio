@@ -43,6 +43,11 @@
   box-sizing: border-box;
 }
 
+/* body{
+  background-color: black;
+  color: white;
+} */
+
 .App header{
   min-height: 10vh;
   display: flex;

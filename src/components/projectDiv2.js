@@ -7,8 +7,8 @@ class ProjectDiv2 extends React.Component{
 
     render(){
         return(
-            <div className="projectContainer">
-                <div className="projectDescription two">
+            <div className="projectContainer two">
+                <div className="projectDescription">
                     <h1>{this.props.h1}</h1>
 
                     <p>{this.props.description}</p>
