@@ -29,10 +29,10 @@
 
 .introDiv{
     position: relative;
-    max-width: 1110px;
-    max-height: 600px;
-    width: 81vw;
-    height: 91vh;
+    width: 1110px;
+    height: 600px;
+    max-width: 81vw;
+    max-height: 91vh;
     border: 2px solid red;
 }
 
@@ -45,10 +45,10 @@
 
 .intro{
     position: absolute;
-    max-width: 36%;
-    max-height: 50%;
-    width: 400px;
-    height: 300px;
+    width: 36%;
+    height: 50%;
+    max-width: 400px;
+    max-height: 300px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@
 }
   
 .intro h1{
-    font-size: 40px;
+    font-size: 33px;
 }
   
 .intro a{
@@ -81,4 +81,37 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+@media (max-width: 988px){
+
+
+  .intro{
+    width: 80%;
+  }
+
+}
+
+
+@media (max-width: 700px){
+
+  .introDiv{
+    position: unset;
+    max-width: 100vw;
+    max-height: unset;
+    height: unset;
+  }
+
+
+  .intro{
+    width: 100%;
+    position: unset;
+    bottom: unset;
+    left: unset;
+  }
+
+  .intro h1{
+    font-size: 31px;
+  }
+
 }
