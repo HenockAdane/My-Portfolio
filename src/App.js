@@ -7,6 +7,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { gsap } from "gsap"
 import Home from "./components/home"
 import { ReactComponent as TwitterLogo } from "./images/icons/twitter.svg"
 import { ReactComponent as LinkedinLogo } from "./images/icons/linkedin.svg"
@@ -20,8 +21,41 @@ import Projects from "./components/projects"
 
 class App extends React.Component {
 
+  constructor(){
+    super()
+    this.state={
+      ulStyle: "unset"
+    }
+    this.toggleMenu = this.toggleMenu.bind(this)
+  }
 
 
+
+
+
+  toggleMenu(e){
+    console.log(e.target)
+    e.target.parentElement.classList.toggle("open")
+
+    if (this.state.ulStyle === "none"){
+      this.setState({
+        ulStyle: "flex"
+      })
+      gsap.from(".odd", {duration:1, x:"-100%", duration: 0.3})
+      gsap.from(".even", {duration:1, x:"100%", duration: 0.3})
+    }
+
+    else{
+
+      gsap.from(".odd", {duration:1, x:"-100%", duration: 0.3})
+      gsap.from(".even", {duration:1, x:"100%", duration: 0.3})
+
+      this.setState({
+        ulStyle: "none"
+      })
+    }
+
+  }
   
   render(){
 
@@ -31,15 +65,22 @@ class App extends React.Component {
     return (
     <div className="App">
     <header>
+
+    <div className="another-menu">
         <img src={logo} ></img>
+        <div className="menu" onClick={this.toggleMenu}>
+            <div className="burger"></div>
+          </div>
+    </div>
 
         <nav>
-          <ul>
-            <Link className="nav-links" to={"/"} >HOME</Link>
-            <Link className="nav-links" to={"/projects"} >PROJECTS</Link>
-            <Link className="nav-links" to={"/contact"} >CONTACT</Link>
-
+          <ul style={{display:this.state.ulStyle}}>
+            <Link className="nav-links odd" to={"/"} >HOME</Link>
+            <Link className="nav-links even" to={"/projects"} >PROJECTS</Link>
+            <Link className="nav-links odd" to={"/contact"} >CONTACT</Link>
           </ul>
+
+
         </nav>
       
     </header>

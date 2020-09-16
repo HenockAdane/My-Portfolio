@@ -1,5 +1,12 @@
 import React from "react"
 import "../component-css/home.css"
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+  
 
 
 
@@ -26,6 +33,18 @@ class Home extends React.Component{
                 <a href="#aboutMe"><div className="arrowDown"></div>ABOUT ME</a>
             </div>
             </div>
+
+        
+        <div id="aboutMe">
+            <img id="profilePic" alt="Profile Picture" src="/images/ProfilePicture.jpg" />
+
+            <div>
+            <h1>About Me</h1>
+            <p>I am a self taught junior front-end developer looking for a role in an exciting company where I am able to improve myself. The tech stack I use at the moment includes HTML,CSS,vanilla JS, React.JS, Redux.JS and firebase but I am willing to use whatever tools are required as I am able to adapt quickly due to overcoming and learning from the many difficulties I have faced during my self taught dev journy so far. I am based in London, UK, but I am happy working remotely. Please click <Link to={"/projects"}>Here</Link> to view my projects</p>
+            </div>
+
+
+        </div>
 
         </div>)
     }
