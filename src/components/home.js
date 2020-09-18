@@ -18,14 +18,10 @@ class Home extends React.Component{
     }
 
 
-    // componentDidMount(){
-    //     gsap.from(".homeBody", {x:"-100vw", duration: 2})
-    // }
+    componentDidMount(){
+        gsap.from(".homeBody", {opacity: 0, duration: 2})
+    }
 
-    // componentWillUnmount(){
-    //     gsap.from(".homeBody", {x:"100vw"})
-        
-    // }
 
 
 

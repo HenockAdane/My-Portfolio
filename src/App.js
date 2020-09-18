@@ -22,7 +22,7 @@ class App extends React.Component {
   constructor(){
     super()
     this.state={
-      ulStyle: "unset"
+      ulStyle: ""
     }
     this.toggleMenu = this.toggleMenu.bind(this)
   }
@@ -42,6 +42,12 @@ class App extends React.Component {
             ulStyle: "unset"
           })
         }
+
+        else{
+          this.setState({
+            ulStyle: "none"
+          })
+        }
       })
     
   }
@@ -59,7 +65,7 @@ class App extends React.Component {
     else{
     e.target.parentElement.classList.toggle("open")
     }
-    
+
     if (this.state.ulStyle === "none"){
       this.setState({
         ulStyle: "flex"
@@ -100,7 +106,6 @@ class App extends React.Component {
           <ul style={{display:this.state.ulStyle}}>
             <Link className="nav-links odd" to={"/"} >HOME</Link>
             <Link className="nav-links even" to={"/projects"} >PROJECTS</Link>
-            <a className="nav-links odd" href="#contactMe">CONTACT</a>
           </ul>
 
 

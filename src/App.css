@@ -134,7 +134,7 @@ footer img{
   }
 
   ul{
-    display: unset;
+    display: none;
     flex-direction: column;
     width: 100%;
   }
@@ -154,12 +154,13 @@ footer img{
 
   .even{
     border: none;
+    border-top: solid;
+    border-bottom: solid;
   }
 
   .odd{
     border: none;
     border-top: solid;
-    border-bottom: solid;
   }
 
   .socialsDiv a:hover{
