@@ -22,15 +22,17 @@
     width: 95%;
     height: 100%;
     display: flex;
+    justify-content: space-between;
     margin: 10% 0;
-    border: 1px solid;
+    transition: all 0.4s ease-in;
 }
 
+/* .projectContainer:hover{
+    transform: scale(1.1);
+} */
+
 .projectImg{
-    max-width: 540px;
-    max-height: 500px;
     width: 54%;
-    height:100%;
 }
 
 .projectDescription{
@@ -53,16 +55,34 @@
 } */
 
 
+.projectDescription p{
+    margin: 5% 0;
+}
+
+.type{
+    color: violet;
+}
+
+.used{
+    margin: 2.5% 0 5% 0;
+    color: violet;
+}
+
+
 .projectDescription a{
     padding: 10px;
     text-decoration: none;
-    color: black;
+    color: white;
     border: 2px solid;
+    width: 50%;
+    text-align: center;
+    transition: all 0.4s ease-in;
 }
 
 .projectDescription a:hover{
-    background-color: black;
-    color: white;
+    background-color: #5FB4A2;
+    color: black;
+    border-radius: 20px;
 }
 
 
@@ -71,6 +91,10 @@
     .projectContainer{
         max-height: unset;
         height: unset;
+    }
+
+    .projectContainer:hover{
+        transform: unset;
     }
 
     .one{
@@ -102,6 +126,7 @@
     .projectDescription a:hover{
         background-color: unset;
         color: unset;
+        border-radius: unset;
     }
 
     .projectDescription a:active{

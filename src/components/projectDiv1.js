@@ -1,8 +1,14 @@
 import React from "react"
+import { gsap } from "gsap"
 import "../component-css/projectDiv.css"
 
 class ProjectDiv1 extends React.Component{
 
+
+
+    // componentDidMount(){
+    //     gsap.from(".one", {opacity: 0})
+    // }
 
 
     render(){
@@ -13,6 +19,10 @@ class ProjectDiv1 extends React.Component{
                     <h1>{this.props.h1}</h1>
 
                     <p>{this.props.description}</p>
+
+                    <o className="type">{this.props.type}</o>
+                    <o className="used">{this.props.used}</o>
+
                     <a href={this.props.link} target="_blank">Visit Site</a>
                 </div>
             </div>

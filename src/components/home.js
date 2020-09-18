@@ -1,4 +1,5 @@
 import React from "react"
+import { gsap } from "gsap"
 import "../component-css/home.css"
 import {
     BrowserRouter as Router,
@@ -14,9 +15,17 @@ class Home extends React.Component{
 
     constructor(){
         super();
-        this.state = []
     }
 
+
+    // componentDidMount(){
+    //     gsap.from(".homeBody", {x:"-100vw", duration: 2})
+    // }
+
+    // componentWillUnmount(){
+    //     gsap.from(".homeBody", {x:"100vw"})
+        
+    // }
 
 
 
@@ -39,9 +48,15 @@ class Home extends React.Component{
             <img id="profilePic" alt="Profile Picture" src="/images/ProfilePicture.jpg" />
 
             <div>
-            <h1>About Me</h1>
-            <p>I am a self taught junior front-end developer looking for a role in an exciting company where I am able to improve myself. The tech stack I use at the moment includes HTML,CSS,vanilla JS, React.JS, Redux.JS and firebase but I am willing to use whatever tools are required as I am able to adapt quickly due to overcoming and learning from the many difficulties I have faced during my self taught dev journy so far. I am based in London, UK, but I am happy working remotely. Please click <Link to={"/projects"}>Here</Link> to view my projects</p>
+            <h1>ABOUT ME</h1>
+            <p id="description">I am a self taught junior front-end developer looking for a role in an exciting company where I am able to improve myself. The tech stack I use at the moment includes HTML,CSS,vanilla JS, React.JS, Redux.JS and firebase but I am willing to use whatever tools are required as I am able to adapt quickly due to overcoming and learning from the many difficulties I have faced during my self taught dev journy so far. I am based in London, UK, but I am happy working remotely. Please click <Link to={"/projects"}>Here</Link> to view my projects</p>
             </div>
+
+
+            <p id="contactMe">CONTACT ME</p>
+
+            <a className="footer-links" href="mailto:adanehenock@gmail.com" target="_blank">adanehenock@gmail.com</a>
+            <a className="footer-links" href="tel:07938888763">07938888763</a>
 
 
         </div>
