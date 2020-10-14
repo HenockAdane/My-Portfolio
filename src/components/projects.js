@@ -10,7 +10,17 @@ class Projects extends React.Component{
         super()
         this.state = {
             projectDetails:[
-                {project: "Movie/Show App",
+            {
+                project: "Photosnap",
+                description: "This project required me to build a fully responsive multi page website to the designs provided. I used React and css along with gsap.js for a menu animation",
+                img: "/images/portfolio/desktop/photosnap.png",
+                type: "Interaction Design / Front-End Developent",
+                used: "REACT, CSS, React-router-dom",
+                link: "https://photosnap-r9wxa2kh3.vercel.app/"
+
+
+            },
+            {   project: "Movie/Show App",
                 description: "This project required me to build a fully responsive app that allows you to fetch movies and shows from an api using the search box. This app uses firebase auth which allows a user to sign in/up with either email and password or Google login. The app also uses firebase cloud storage which allows the users to the movies/shows as favourites as long as they are signed in",
                 img: "/images/portfolio/desktop/movie-app.png",
                 type: "Interaction Design / Front-End Development",
