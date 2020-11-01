@@ -58,13 +58,10 @@ class App extends React.Component {
 
   toggleMenu(e){
     console.log(e.target)
-    if (e.target.classList.contains === "menu"){
-      e.target.classList.toggle("open")
+    if (e.currentTarget.classList.contains === "menu"){
+      e.currentTarget.classList.toggle("open")
     }
 
-    else{
-    e.target.parentElement.classList.toggle("open")
-    }
 
     if (this.state.ulStyle === "none"){
       this.setState({
