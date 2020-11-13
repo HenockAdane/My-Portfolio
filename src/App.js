@@ -22,7 +22,8 @@ class App extends React.Component {
   constructor(){
     super()
     this.state={
-      ulStyle: ""
+      ulStyle: "",
+      menuStyle: "menu"
     }
     this.toggleMenu = this.toggleMenu.bind(this)
   }
@@ -58,31 +59,51 @@ class App extends React.Component {
 
   toggleMenu(e){
     console.log(e.target)
-    if (e.target.classList.contains === "menu"){
-      e.target.classList.toggle("open")
-    }
-
-    else{
-    e.target.parentElement.classList.toggle("open")
-    }
-
-    if (this.state.ulStyle === "none"){
+    if (this.state.menuStyle === "menu"){
       this.setState({
+        menuStyle: "menu open",
         ulStyle: "flex"
       })
-      gsap.from(".odd", {x:"-100%", duration: 0.3})
-      gsap.from(".even", {x:"100%", duration: 0.3})
-    }
-
-    else{
 
       gsap.from(".odd", {duration:1, x:"-100%", duration: 0.3})
       gsap.from(".even", {duration:1, x:"100%", duration: 0.3})
 
+    }
+
+    else{
       this.setState({
+        menuStyle: "menu",
         ulStyle: "none"
       })
+      gsap.from(".odd", {x:"-100%", duration: 0.3})
+      gsap.from(".even", {x:"100%", duration: 0.3})
+
     }
+    // if (e.target.classList.contains === "menu"){
+    //   e.target.classList.toggle("open")
+    // }
+
+    // else{
+    // e.target.parentElement.classList.toggle("open")
+    // }
+
+    // if (this.state.ulStyle === "none"){
+    //   this.setState({
+    //     ulStyle: "flex"
+    //   })
+    //   gsap.from(".odd", {x:"-100%", duration: 0.3})
+    //   gsap.from(".even", {x:"100%", duration: 0.3})
+    // }
+
+    // else{
+
+    //   gsap.from(".odd", {duration:1, x:"-100%", duration: 0.3})
+    //   gsap.from(".even", {duration:1, x:"100%", duration: 0.3})
+
+    //   this.setState({
+    //     ulStyle: "none"
+    //   })
+    // }
 
   }
   
@@ -97,7 +118,7 @@ class App extends React.Component {
 
     <div className="another-menu">
     <Link to={"/"}><img className="logo" src={logo} ></img></Link>
-        <div className="menu" onClick={this.toggleMenu}>
+        <div className={this.state.menuStyle} onClick={this.toggleMenu}>
             <div className="burger"></div>
           </div>
     </div>

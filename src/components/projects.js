@@ -25,7 +25,7 @@ class Projects extends React.Component{
                 img: "/images/portfolio/desktop/movie-app.png",
                 type: "Interaction Design / Front-End Development",
                 used: "HTML / CSS / JS(React, Redux) / Firebase(auth,cloud)",
-                link:"https://react-movie-appppppp-ebp5gl8dv.vercel.app/"
+                link:"https://react-movie-appppppp.henock-adane.vercel.app/"
             },
             {
                 project: "Manage",
