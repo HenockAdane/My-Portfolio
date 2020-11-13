@@ -59,62 +59,55 @@ class App extends React.Component {
 
   toggleMenu(e){
     console.log(e.target)
-<<<<<<< HEAD
+
     if (this.state.menuStyle === "menu"){
-=======
-    if (e.currentTarget.classList.contains === "menu"){
-      e.currentTarget.classList.toggle("open")
-    }
-
-
-    if (this.state.ulStyle === "none"){
->>>>>>> 1de989271ca2e136951b04712c86c3145aeab11e
       this.setState({
         menuStyle: "menu open",
         ulStyle: "flex"
       })
 
-      gsap.from(".odd", {duration:1, x:"-100%", duration: 0.3})
-      gsap.from(".even", {duration:1, x:"100%", duration: 0.3})
 
     }
 
+
     else{
+
       this.setState({
         menuStyle: "menu",
         ulStyle: "none"
       })
-      gsap.from(".odd", {x:"-100%", duration: 0.3})
-      gsap.from(".even", {x:"100%", duration: 0.3})
 
+      
     }
-    // if (e.target.classList.contains === "menu"){
-    //   e.target.classList.toggle("open")
-    // }
 
-    // else{
-    // e.target.parentElement.classList.toggle("open")
-    // }
 
-    // if (this.state.ulStyle === "none"){
-    //   this.setState({
-    //     ulStyle: "flex"
-    //   })
-    //   gsap.from(".odd", {x:"-100%", duration: 0.3})
-    //   gsap.from(".even", {x:"100%", duration: 0.3})
-    // }
 
-    // else{
+   }
 
-    //   gsap.from(".odd", {duration:1, x:"-100%", duration: 0.3})
-    //   gsap.from(".even", {duration:1, x:"100%", duration: 0.3})
 
-    //   this.setState({
-    //     ulStyle: "none"
-    //   })
-    // }
 
-  }
+      ////  (e.target.classList.contains === "menu"){
+    //// e.target.classList.toggle("open")
+    //// 
+    //// se{
+    //// target.parentElement.classList.toggle("open")
+    //// 
+    ////  (this.state.ulStyle === "none"){
+    //// this.setState({
+    ////   ulStyle: "flex"
+    //// })
+    //// gsap.from(".odd", {x:"-100%", duration: 0.3})
+    //// gsap.from(".even", {x:"100%", duration: 0.3})
+    //// 
+    //// se{
+
+    //// gsap.from(".odd", {duration:1, x:"-100%", duration: 0.3})
+    //// gsap.from(".even", {duration:1, x:"100%", duration: 0.3})
+
+    //// this.setState({
+    ////   ulStyle: "none"
+    //// })
+    //// 
   
   render(){
 
