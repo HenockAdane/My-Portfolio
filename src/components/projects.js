@@ -11,11 +11,19 @@ class Projects extends React.Component{
         this.state = {
             projectDetails:[
             {
+                project: "SNIKERS",
+                description: "This project is a full stack ecommerce store, inspired heavily by Nike. It will be built to be responsive for all screen sizes and will inlcude features such as user sign up and log in and also a payment method.",
+                img: "/images/portfolio/desktop/coming-soon.png",
+                type: "Interaction Design / Full Stack Development",
+                used: "React, SASS, React-router-dom, Redux, Node(Express), MongoDB(mongoose)"
+
+            },
+            {
                 project: "Photosnap",
                 description: "This project required me to build a fully responsive multi page website to the designs provided. I used React and css along with gsap.js for a menu animation",
                 img: "/images/portfolio/desktop/photosnap.png",
                 type: "Interaction Design / Front-End Developent",
-                used: "REACT, CSS, React-router-dom",
+                used: "React, CSS, React-router-dom",
                 link: "https://photosnap-r9wxa2kh3.vercel.app/"
 
 

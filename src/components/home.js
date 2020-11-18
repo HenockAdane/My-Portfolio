@@ -45,7 +45,7 @@ class Home extends React.Component{
 
             <div>
             <h1>ABOUT ME</h1>
-            <p id="description">I am a self taught junior front-end developer looking for a role in an exciting company where I am able to improve myself. The tech stack I use at the moment includes HTML,CSS,vanilla JS, React.JS, Redux.JS and firebase but I am willing to use whatever tools are required as I am able to adapt quickly due to overcoming and learning from the many difficulties I have faced during my self taught dev journy so far. I am based in London, UK, but I am happy working remotely. Please click <Link to={"/projects"}>Here</Link> to view my projects</p>
+            <p id="description">I am a self taught junior front-end developer looking for a role in an exciting company where I am able to improve myself. The tech stack I use at the moment includes HTML,CSS,vanilla JS, React.JS, Redux.JS, Node.js(Express), MongoDB(Mongoose), and firebase but I am willing to use whatever tools are required as I am able to adapt quickly due to overcoming and learning from the many difficulties I have faced during my self taught dev journy so far. I am based in London, UK, but I am happy working remotely. Please click <Link to={"/projects"}>Here</Link> to view my projects</p>
             </div>
 
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -86,28 +85,7 @@ class App extends React.Component {
 
 
 
-      ////  (e.target.classList.contains === "menu"){
-    //// e.target.classList.toggle("open")
-    //// 
-    //// se{
-    //// target.parentElement.classList.toggle("open")
-    //// 
-    ////  (this.state.ulStyle === "none"){
-    //// this.setState({
-    ////   ulStyle: "flex"
-    //// })
-    //// gsap.from(".odd", {x:"-100%", duration: 0.3})
-    //// gsap.from(".even", {x:"100%", duration: 0.3})
-    //// 
-    //// se{
 
-    //// gsap.from(".odd", {duration:1, x:"-100%", duration: 0.3})
-    //// gsap.from(".even", {duration:1, x:"100%", duration: 0.3})
-
-    //// this.setState({
-    ////   ulStyle: "none"
-    //// })
-    //// 
   
   render(){
 
@@ -119,7 +97,7 @@ class App extends React.Component {
     <header>
 
     <div className="another-menu">
-    <Link to={"/"}><img className="logo" src={logo} ></img></Link>
+    <Link to={"/"}><img className="logo" src="/favicon1.svg" ></img></Link>
         <div className={this.state.menuStyle} onClick={this.toggleMenu}>
             <div className="burger"></div>
           </div>
@@ -144,13 +122,10 @@ class App extends React.Component {
           <Route exact={true} path="/projects" render={() =>(
             <Projects/>
           )}/>
-          {/* <Route exact={true} path="/contact" render={()=>(
-            !this.state.currentUser ? (<SignInOrUp inputChange={this.inputChange} input={this.state.input} signOut={this.signOut} user={this.state.userName} currentUser={this.state.currentUser}/>) : (<Redirect to="/" />)
-          )} /> */}
         </Switch>
 
     <footer>
-    <Link to={"/"}><img src={logo} ></img></Link>
+    <Link to={"/"}><img src="/favicon1.svg" ></img></Link>
     <div className="socialsDiv">
       <a href="https://github.com/HenockAdane" target="_blank"><GithubLogo className="socials"/></a>
       <a href="#" target="_blank"><TwitterLogo className="socials"/></a>
