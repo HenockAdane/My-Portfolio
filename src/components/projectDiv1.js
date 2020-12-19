@@ -23,7 +23,7 @@ class ProjectDiv1 extends React.Component{
                     <o className="type">{this.props.type}</o>
                     <o className="used">{this.props.used}</o>
 
-                    <a href={this.props.link} target="_blank">Visit Site</a>
+            {this.props.link ? (<a href={this.props.link} target="_blank">Visit Site</a>): false}
                 </div>
             </div>
         )
