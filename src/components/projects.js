@@ -12,18 +12,13 @@ class Projects extends React.Component{
             projectDetails:[
             {
                 project: "SNIKERS",
-<<<<<<< HEAD
+
                 description: "(NOT FINISHED YET)This project is a full stack ecommerce store, inspired heavily by Nike. It will be built to be responsive for all screen sizes and will inlcude features such as user sign up and log in and also a payment method.",
                 img: "/images/portfolio/desktop/snikers.png",
                 type: "Interaction Design / Full Stack Development",
                 used: "React, SASS, React-router-dom, Redux, Node(Express), MongoDB(mongoose)",
                 link: "https://snikers-by-henock-adane.vercel.app/"
-=======
-                description: "This project is a full stack ecommerce store, inspired heavily by Nike. It will be built to be responsive for all screen sizes and will inlcude features such as secure user sign up and log in and also a payment method.",
-                img: "/images/portfolio/desktop/coming-soon.png",
-                type: "Interaction Design / Full Stack Development",
-                used: "React, SASS, React-router-dom, Redux, Node(Express), MongoDB(mongoose), bcrypt"
->>>>>>> fe9fde732eb37e58a3ebca26837eb7ad470d57c3
+
 
             },
             {

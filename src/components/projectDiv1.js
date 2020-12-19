@@ -1,5 +1,4 @@
 import React from "react"
-import { gsap } from "gsap"
 import "../component-css/projectDiv.css"
 
 class ProjectDiv1 extends React.Component{
@@ -23,7 +22,7 @@ class ProjectDiv1 extends React.Component{
                     <o className="type">{this.props.type}</o>
                     <o className="used">{this.props.used}</o>
 
-            {this.props.link ? (<a href={this.props.link} target="_blank">Visit Site</a>): false}
+            {this.props.link ? (<a href={this.props.link} rel="noopener noreferrer" target="_blank">Visit Site</a>): false}
                 </div>
             </div>
         )

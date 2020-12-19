@@ -1,21 +1,14 @@
 import React from "react"
 import { gsap } from "gsap"
 import "../component-css/home.css"
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+import {Link} from "react-router-dom";
   
 
 
 
 class Home extends React.Component{
 
-    constructor(){
-        super();
-    }
+
 
 
     componentDidMount(){
@@ -31,7 +24,7 @@ class Home extends React.Component{
 
         <div className="introDiv">
 
-        <img className="introImg" src="/images/homepage/desktop/image-homepage-hero.jpg"></img>
+        <img className="introImg" src="/images/homepage/desktop/image-homepage-hero.jpg" alt="hero"></img>
 
             <div className="intro">
                 <h1>Hey, I'm Henock Adane and I love building beautiful websites</h1>
@@ -41,7 +34,7 @@ class Home extends React.Component{
 
         
         <div id="aboutMe">
-            <img id="profilePic" alt="Profile Picture" src="/images/ProfilePicture.jpg" />
+            <img id="profilePic" alt="Profile" src="/images/ProfilePicture.jpg" />
 
             <div>
             <h1>ABOUT ME</h1>
@@ -51,7 +44,7 @@ class Home extends React.Component{
 
             <p id="contactMe">CONTACT ME</p>
 
-            <a className="footer-links" href="mailto:adanehenock@gmail.com" target="_blank">adanehenock@gmail.com</a>
+            <a className="footer-links" href="mailto:adanehenock@gmail.com" rel="noopener noreferrer" target="_blank">adanehenock@gmail.com</a>
             <a className="footer-links" href="tel:07938888763">07938888763</a>
 
 
